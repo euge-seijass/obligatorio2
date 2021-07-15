@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="contenedor">
+                <figure>
+                    <a href="index.html">
+                        <img src="img/logopaula.png" alt="logo">
+                    </a>
+                </figure>
+
+                <ul>
+                    <li>
+                        <a href="#iniciodesesion">Iniciar sesión</a>
+                    </li>
+
+                    <li>
+                        <a class="distinto" href="#registro">Registrarme</a>
+                    </li>
+
+                    <li>
+                        <a href>
+                            <img src="img/bolsa.png" class="iconodecomprar">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="menu">
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="#biografia">Biografía</a>
+            <a href="#diseños">Diseños</a>
+            <a href="#comprar">Comprar</a>
+            <a class="activo" href="#activo">Contacto</a>
+        </div>
+    </nav>
+
+
+    <nav class="horarios">
+        <h6 id="horarios"> Horarios disponibles de la agenda de Julio de</h6>
+        <h1 id="Paula">PAULA SCHER</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Lunes 26</th>
+                    <th>Martes 27</th>
+                    <th>Miércoles 28</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>15 a 15:30 hs</td>
+                    <td>15 a 15:30 hs</td>
+                    <td>15 a 15:30 hs</td>
+                </tr>
+
+                <tr>
+                    <td>15:30 a 16 hs</td>
+                    <td>15:30 a 16 hs</td>
+                    <td>15:30 a 16 hs</td>
+                </tr>
+
+                <tr>
+                    <td>16 a 16:30 hs</td>
+                    <td>16 a 16:30 hs</td>
+                    <td>16 a 16:30 hs</td>
+                </tr>
+
+                <tr>
+                    <td>16:30 a 17 hs</td>
+                    <td>16:30 a 17 hs</td>
+                    <td>16:30 a 17 hs</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <a class="agosto" href="#">Ver horarios para Agosto</a>
+    </nav>
+
+    <h3>Agendá una visita con Paula aquí:</h3>
+
+    <form action="agenda" method="agenda">
+
+        <fieldset class="primeraparte">
+
+            <label for="nombreyapellido">Nombre y apellido: </label>
+            <input type="text" id="nombreyapellido" name:="nombreyapellido"
+                placeholder="Escriba su nombre y su apellido">
+
+            <label for="celular"> Celular:</label>
+            <input type="text" id="celular" name="celular" placeholder="Escriba su celular...">
+
+            <label for="horarios"> Elejir un horario:</label>
+            <select name="horarios" id=" horarios">
+                <option value="Seleccione ">aquí</option>
+                <option value="lunes26">Lunes 26 de 15 a 15:30hs </option>
+                <option value="lunes26">Lunes 26 de 15:30 a 16hs</option>
+                <option value="lunes26">Lunes 26 de 16 a 16:30hs</option>
+                <option value="lunes26">Lunes 26 de 16:30 a 17hs</option>
+                <option value="martes27">Martes 27 de 15 a 15:30hs </option>
+                <option value="martes27">Martes 27 de 15:30 a 16hs</option>
+                <option value="martes27">Martes 27 de 16 a 16:30hs</option>
+                <option value="martes27">Martes 27 de 16:30 a 17hs</option>
+                <option value="miercoles28">Miercoles 28 de 15 a 15:30hs </option>
+                <option value="miercoles28">Miercoles 28 de 15:30 a 16hs</option>
+                <option value="miercoles28">Miercoles 28 de 16 a 16:30hs</option>
+                <option value="miercoles28">Miercoles 28 de 16:30 a 17hs</option>
+            </select>
+        </fieldset>
+
+        <fieldset class="segundaparte">
+
+            <label for="msj" class="aclaracionestitulo"> Tiene aclaraciones? </label>
+            <textarea name="aclaraciones" id="msj" placeholder="Escribelas aquí..."></textarea>
+        </fieldset>
+        <fieldset class="visita">
+            <legend>Modalidad de la visita</legend>
+
+            <input type="radio" name="visita" value="presencial" id="presencial">
+            <label for="presencial">Presencial</label>
+
+            <input type="radio" name="visita" value="virtual" id="virtual">
+            <label for="virtual"> Virtual</label>
+        </fieldset>
+
+        <fieldset class="ultimaparte">
+            <input type="checkbox" name="condiciones" value="condiciones" id="condiciones">
+            <label for="condiciones">Acepto las condiciones</label>
+            <a class="confirmar" href="#">Enviar</a>
+        </fieldset>
+    </form>
+
+    <div class="contenedortresfotos">
+        <section class="todo">
+            <h2 class="libros"> Publicaciones de Paula Scher </h2>
+
+            <div class="tresfotos">
+
+                <article class="tres">
+                    <img src="img/fotopaula.jpg" alt="fotopaula">
+                    <h6>Libro "Make It Bigger"</h6>
+                    <p>Monografía de 200 trabajos de Paula Scher (2002).</p>
+                    <a class="mostrarmas" href="#"> Mostrar más </a>
+                </article>
+
+                <article class="tres">
+                    <img src="img/fotopaulamapa.jpg" alt="fotopaulamapa">
+                    <h6>Libro "MAPS"</h6>
+                    <p>Recopilación de 39 de sus cuadros de mapas (2011)</p>
+                    <a class="mostrarmas" href="#"> Mostrar más </a>
+                </article>
+
+                <article class="tres">
+                    <img src="img/fotopaulacostado.jpg" alt="fotopaula">
+                    <h6>Libro "Paula Scher: Works"</h6>
+                    <p>Recopilatorio de sus trabajos de Pentagram (2017).</p>
+                    <a class="mostrarmas" href="#"> Mostrar más </a>
+                </article>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <footer id="Contacto">
+        <div class="footer">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com" alt="ig">
+                        <img src="img/logoig.png" alt="logoig">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://es-la.facebook.com" alt="fb">
+                        <img src="img/logofb.jpg" alt="logofb">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.whatsapp.com" alt="wpp">
+                        <img src="img/logowpp.png" alt="logowpp">
+                    </a>
+                </li>
+            </ul>
+            <h6>Paula Scher</h6>
+        </div>
+    </footer>
+</body>
+
+</html>
